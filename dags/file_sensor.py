@@ -6,7 +6,7 @@ from airflow.utils.decorators import apply_defaults
 
 class FileSensor(BaseSensorOperator):
     """
-    Menunggu suatu file apakah sudah ada.
+    Menunggu suatu file atau direktori apakah sudah ada.
     """
     template_fields = ('path', )
 
