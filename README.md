@@ -44,6 +44,18 @@ Default port dari airflow webserver adalah 8080.
 
 Lalu, buka localhost:8080 di web browser.
 
+## Insert DAGs and codes
+
+Download seluruh isi repo ini, lalu copy ke dalam folder `~/airflow`, sehingga strukturnya adalah seperti ini:
+```bash
+├── airflow
+│   ├── codes
+│   │   ├── analyze.py
+│   ├── dags
+│   │   ├── a_workshop_complex_dag.py
+│   │   ├── a_workshop_simple_dag.py
+│   │   ├── file_sensor.py
+```
 
 ## Data
 
