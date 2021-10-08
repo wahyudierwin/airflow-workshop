@@ -14,8 +14,8 @@ dag = DAG(
     max_active_runs=1
 )
 
-project_dir = '/Users/erwinekowahyudi/project/airflow-workshop'
-data_dir = '/Users/erwinekowahyudi/Downloads/ml-1m/{{ds}}'
+project_dir = '{{var.json.workshop.project_dir}}'
+data_dir = '{{var.json.workshop.data_dir}}/{{ds}}'
 
 wait_users_data = FileSensor(
     task_id='wait_users_data',
