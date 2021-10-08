@@ -1,5 +1,9 @@
 # airflow-workshop
 
+## Prerequisite
+
+- Miniconda: https://docs.conda.io/en/latest/miniconda.html
+
 ## Initialize conda
 ```bash
 conda create --name airflow python=3.8
