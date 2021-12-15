@@ -10,7 +10,7 @@ def parse_arguments():
     parser.add_argument('--users-latest-path')
     parser.add_argument('--movies-latest-path')
     parser.add_argument('--ratings-latest-path')
-    parser.add_argument('--output-latest-path')
+    parser.add_argument('--output-path')
 
     return parser.parse_args()
 
