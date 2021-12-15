@@ -23,8 +23,6 @@ def read_latest(latest_path):
 def main():
     args = parse_arguments()
 
-
-
     users = pd.read_csv(
         read_latest(args.users_latest_path),
         sep='::',

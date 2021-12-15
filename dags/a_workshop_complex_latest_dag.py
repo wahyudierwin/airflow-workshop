@@ -45,7 +45,7 @@ analyze = BashOperator(
         f' --users-latest-path {data_dir}/latest/users.json'
         f' --movies-latest-path {data_dir}/latest/movies.json'
         f' --ratings-latest-path {data_dir}/latest/ratings.json'
-        f' --output-path {data_dir}/grouped.csv',
+        f' --output-path {data_dir}/{{{{ds}}}}/grouped.csv',
     trigger_rule='all_done',
     dag=dag
 )
