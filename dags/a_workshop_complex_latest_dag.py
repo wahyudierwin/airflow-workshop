@@ -40,7 +40,8 @@ wait_ratings_data = FileSensor(
 
 analyze = BashOperator(
     task_id='analyze',
-    bash_command=f'python' \
+    bash_command=f'mkdir -p {data_dir}/{{{{ds}}}} ' \
+        f'&& python'
         f' {project_dir}/codes/analyze_latest.py'
         f' --users-latest-path {data_dir}/latest/users.json'
         f' --movies-latest-path {data_dir}/latest/movies.json'
