@@ -51,8 +51,10 @@ Download seluruh isi repo ini, lalu copy ke dalam folder `~/airflow`, sehingga s
 ├── airflow
 │   ├── codes
 │   │   ├── analyze.py
+│   │   ├── analyze_latest.py
 │   ├── dags
 │   │   ├── a_workshop_complex_dag.py
+│   │   ├── a_workshop_complex_latest_dag.py
 │   │   ├── a_workshop_simple_dag.py
 │   │   ├── file_sensor.py
 ```
